@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Grade 9 Tech & Code Live Showcase Demo">
+  <title>Grade 9 Code Arena</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Fullscreen Canvas for Confetti System -->
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+  <div class="glow-backdrop" aria-hidden="true"></div>
+
+  <div class="app-container">
+    <header class="header">
+      <div class="badge">LIVE DEMO LAB</div>
+      <h1 class="glitch-title">WELCOME <span class="neon-text">GRADE 10</span></h1>
+      <p class="subtitle">Real-time Frontend Code Architecture in Action</p>
+    </header>
+
+    <main class="main-content">
+      <!-- Live Selfie Card Section -->
+      <section class="card selfie-section" aria-labelledby="selfie-title">
+        <div class="card-header">
+          <span class="status-dot"></span>
+          <h2 id="selfie-title" class="card-title">Live Class Snapshot</h2>
+        </div>
+
+        <figure class="selfie-wrapper">
+          <img 
+            id="class-selfie" 
+            src="selfie.jpeg" 
+            alt="Live group selfie photo of Grade 9 class" 
+            loading="eager"
+          >
+          <figcaption class="selfie-caption">Squad Sync: Online</figcaption>
+        </figure>
+      </section>
+
+      <!-- Celebration & Interaction Hub -->
+      <section class="card interactive-section" aria-labelledby="action-title">
+        <h2 id="action-title" class="section-title">Hype Meter</h2>
+        <p class="counter-description">Hit the button to trigger a live confetti burst</p>
+
+        <div class="counter-display" aria-live="polite">
+          <span class="counter-label">TOTAL CELEBRATIONS</span>
+          <span id="counter-value" class="counter-number">0</span>
+        </div>
+
+        <button id="smash-btn" class="smash-button" type="button" aria-label="Smash to celebrate with confetti">
+          <span class="btn-glow"></span>
+          <span class="btn-text">SMASH TO CELEBRATE!</span>
+        </button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built with Pure HTML5, CSS3 &amp; Vanilla JavaScript</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
